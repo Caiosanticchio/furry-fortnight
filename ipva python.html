@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <link rel="stylesheet" href="css.css">
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <title>Calculadora IPVA</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="logo.png" alt="logo" width="200" height="200">
+
+        <nav>
+            <ul class="menu">
+                <li class="links"><a href="#">Home</a></li>
+                <li class="links"><a href="#">Sobre</a></li>
+                <li class="links"><a href="#">Ajuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="calculadora">
+        <h4>Calcule seu IPVA</h4><br><br>
+        <form action="TABELA FIP.php" method="post">
+            <div class="form">
+
+                <select class="regiao" name="regiao">
+                    <option value="sp">SP</option>
+                    <option value="rj">RJ</option>
+                    <option value="mg">MG</option>
+                    <option value="es">ES</option>
+                </select>
+
+                <select class="veiculos" name="veiculos">
+                    <option value="caminhão">Caminhão</option>
+                    <option value="carro">Carro</option>
+                    <option value="moto">Moto</option>
+                </select>
+
+                <input type="text" name="valor" placeholder="Insira o valor do veiculo" id="valor"><br><br>
+                <button type="submit" name="btn" id="butn">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="tabela">
+        <h2>Tabela Fipe</h2><br>
+        <table class="fipe">
+            <tr>
+                <th>Estado</th>
+                <th>Veiculo</th>
+                <th>Alicota</th>
+            </tr>
+            <tr>
+                <td>Sp</td>
+                <td>Carro</td>
+                <td>4,00%</td>
+            </tr>
+            <tr>
+                <td>Sp</td>
+                <td>Caminhão</td>
+                <td>1,50%</td>
+            </tr>
+            <tr>
+                <td>Sp</td>
+                <td>Moto</td>
+                <td>2,00%</td>
+            </tr>
+            <tr>
+                <td>ES</td>
+                <td>Carro</td>
+                <td>2,00%</td>
+            </tr>
+            <tr>
+                <td>ES</td>
+                <td>Caminhão</td>
+                <td>3,00%</td>
+            </tr>
+            <tr>
+                <td>ES</td>
+                <td>Moto</td>
+                <td>1,75%</td>
+            </tr>
+            <tr>
+                <td>MG</td>
+                <td>Carro</td>
+                <td>4,20%</td>
+            </tr>
+            <tr>
+                <td>MG</td>
+                <td>Caminhão</td>
+                <td>1,00%</td>
+            </tr>
+            <tr>
+                <td>MG</td>
+                <td>Moto</td>
+                <td>2,50%</td>
+            </tr>
+            <tr>
+                <td>RJ</td>
+                <td>Carro</td>
+                <td>4,10%</td>
+            </tr>
+            <tr>
+                <td>RJ</td>
+                <td>Caminhão</td>
+                <td>1,30%</td>
+            </tr>
+            <tr>
+                <td>RJ</td>
+                <td>Moto</td>
+                <td>2,50%</td>
+            </tr>
+        </table>
+    </section>
+</body>
+
+</html>

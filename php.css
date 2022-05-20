@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+
+
+body{
+    margin: 0;
+    background-image: url(tp244-bg1-08.jpg);
+    background-size: cover;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    background-color: rgba(150, 179, 150, 0.932);
+    justify-content: space-around;
+    padding: 36px;
+}
+
+.menu{
+    margin: 20px;
+}
+
+.links{
+    display: inline-block;
+    margin: 10px;
+    color:rgb(241, 246, 250);
+    text-decoration: solid;
+}
+
+.links>a:hover{
+    color:black;
+}
+
+.links>a{
+    text-decoration: none;
+    color:aliceblue;
+}
+
+.resultado{
+    margin-top: 13%;
+    text-align: center;
+    background-color: rgba(24, 48, 21, 0.671);
+    margin-left: 32%;
+    width: 780px;
+    padding-top: 80px;
+    border: 4px solid rgb(87, 87, 87);
+    border-radius: 4px;
+    height: 430px;
+    font-family: 'Akshar', sans-serif;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.resultado>h1, .php{
+    margin-top: 35px;
+}
+
+.php{
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0.288);
+    width: 200px;
+    margin-left: 38%;
+    border-radius: 3px;
+}
